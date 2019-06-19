@@ -5,6 +5,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'severin-lemaignan/vim-minimap'
+Plugin 'arrufat/vala.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -16,9 +17,10 @@ set number
 map > gt
 map < gT
 syntax on
-colo delek
+colorscheme fruchtig
 vnoremap <C-c> "*y
 vnoremap <C-p> "*p
+nnoremap tt  :tabedit<Space>
 map <F7> mzgg=G`z
 set encoding=utf-8
-let g:clang_library_path='/c/Program Files/LLVM/bin'
+set fdm=marker
