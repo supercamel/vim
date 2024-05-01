@@ -1,13 +1,16 @@
 set nocompatible
-filetype off
+filetype off 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'arrufat/vala.vim'
+Plugin 'TabbyML/vim-tabby'
+let g:tabby_keybinding_accept = '<Tab>'
 
 call vundle#end()
+filetype plugin on
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
@@ -18,8 +21,8 @@ map > gt
 map < gT
 syntax on
 colorscheme fruchtig
-vnoremap <C-c> "*y
-vnoremap <C-p> "*p
+vnoremap <C-c> "*y 
+vnoremap <C-p> "*p 
 nnoremap tt  :tabedit<Space>
 map <F7> mzgg=G`z
 set encoding=utf-8
